@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A00310134 - Portfolio Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1 class="name">Liam Ó Mórdha</h1>
+            <h2 class="subtitle">Software Design Student Portfolio</h2>
+            <button id="theme-toggle" class="theme-btn">🌙 / ☀️</button>
+        </section>
+
+        <div class="grid">
+            <div class="square" data-section="about">About Me</div>
+            <div class="square" data-section="projects">Projects</div>
+            <div class="square" data-section="skills">Skills</div>
+            <div class="square" data-section="contact">Contact Info & CV</div>
+        </div>
+
+        <div class="section hidden" id="section-content">
+            <button id="back-btn">Back</button>
+            
+            <div class="section-block hidden" id="about">
+                <h2>About Me</h2>
+                <p>My name is Liam Moore and I am final year student Studying Software Design with VR and Gaming at TUS(Technological University of Shannon). I am from Loughrea, co.galway where I attened a Coder Dojo from age 7, which</p>
+            </div>
+            
+            <div class="section-block hidden" id="projects">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-row">
+                            <div class="project-text">
+                                <h3>Autoscale</h3>
+                                <p></p>
+                            </div>
+                            <img src="images/autoscale1.png" class="project-img">
+                        </div>
+                        <div class="project-row reverse">
+                            <img src="images/autoscale2.png" class="project-img">
+                            <div class="project-text">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-row">
+                            <div class="project-text">
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                            <img src="https://via.placeholder.com/180" class="project-img">
+                        </div>
+                        <div class="project-row reverse">
+                            <img src="https://via.placeholder.com/180" class="project-img">
+                            <div class="project-text">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-row">
+                            <div class="project-text">
+                                <h3>Project Three</h3>
+                                <p></p>
+                            </div>
+                            <img src="https://via.placeholder.com/180" class="project-img">
+                        </div>
+                        <div class="project-row reverse">
+                            <img src="https://via.placeholder.com/180" class="project-img">
+                            <div class="project-text">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-row">
+                            <div class="project-text">
+                                <h3>Project Four</h3>
+                                <p></p>
+                            </div>
+                            <img src="https://via.placeholder.com/180" class="project-img">
+                        </div>
+                        <div class="project-row reverse">
+                            <img src="https://via.placeholder.com/180" class="project-img">
+                            <div class="project-text">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-row">
+                            <div class="project-text">
+                                <h3>Projects I'm Working On</h3>
+                                <p>This is just a brief summary of project I'm working on in my own time</p>
+                                <h4>Wordle As Gaeilge</h4>
+                                <p>This is a small Java app project I've been working on. As the title says it is my own version of the webgame Wordle but in Irish. I've made some progress with this, I just need to create the GUI.</p>
+                                <h4>Ranker app</h4>
+                                <p>This is a website I start working on, where the user would be able to create tierlists, bracket based ranking, and list ranking that would use a merge-sort algorithm to determine the order. I've gotten as far as getting a version of this working in the console, not as the website yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-block hidden" id="skills">
+    			<h2>Skills</h2>
+    			<h3>Core Skills</h3>
+    			<div class="skills-row">
+			        <i class="devicon-java-plain colored skill-icon" data-label="Java"></i>
+			        <i class="devicon-mysql-plain colored skill-icon" data-label="MySQL"></i>
+			        <i class="devicon-cplusplus-plain colored skill-icon" data-label="C++"></i>
+			        <i class="devicon-csharp-plain colored skill-icon" data-label="C#"></i>
+			        <i class="devicon-python-plain colored skill-icon" data-label="Python"></i>
+			        <i class="devicon-html5-plain colored skill-icon" data-label="HTML"></i>
+			        <i class="devicon-css3-plain colored skill-icon" data-label="CSS"></i>
+			        <i class="devicon-javascript-plain colored skill-icon" data-label="JavaScript"></i>
+    			</div>
+
+    			<h3>Tools</h3>
+    			<div class="skills-row">
+
+			        <i class="devicon-eclipse-plain colored skill-icon" data-label="Eclipse IDE"></i>
+			        <i class="devicon-visualstudio-plain colored skill-icon" data-label="Visual Studio"></i>
+			        <i class="devicon-gimp-plain colored skill-icon" data-label="GIMP"></i>
+			        <div class="skill-icon icon-wrap" data-label="GameMaker Studio">
+    					<img src="icons/gamemaker.svg" class="svg-icon">
+					</div>
+					<div class="skill-icon icon-wrap" data-label="Office 365">
+					    <img src="icons/office365.svg" class="svg-icon">
+					</div>
+					
+					<div class="skill-icon icon-wrap" data-label="Unity">
+					    <img src="icons/unity.svg" class="svg-icon">
+					</div>
+			        <i class="devicon-git-plain colored skill-icon" data-label="Git"></i>
+			    </div>
+			</div>
+
+            <div class="section-block hidden" id="contact">
+    			<h2>Contact Me & CV</h2>
+    			<p>Email: 
+        		<a href="mailto:A00310134@Student.tus.ie" class="contact-link">A00310134@student.tus.ie</a>
+    			</p>
+    			<a href="Liam Moore CV.pdf" download class="cv-btn">Download CV</a>
+			</div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
